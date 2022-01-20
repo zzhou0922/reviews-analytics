@@ -13,3 +13,9 @@ for d in data:
 	sum_len += len(d)
 average = sum_len / len(data)
 print('The average length of all reviews are', average)
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('There are', len(new), 'reviews less than 100 in length.')
